@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNatusFlix.App">
+    
+    <Application.Resources>
+        <!-- Style do Logo -->
+        <Style x:Key="ImageLogo" TargetType="Image">
+            <Setter Property="HeightRequest" Value="150" />
+        </Style>
+        
+        <!-- Style do Button das Categorias -->
+        <Style x:Key="ButtonCategoria" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#810000" />
+            <Setter Property="TextColor" Value="#fff" />
+            <Setter Property="Margin" Value="10" />
+        </Style>
+
+        <!-- Style da Label Texto Aventura -->
+        <Style x:Key="LabelTextoAventuraVermelho" TargetType="Label">
+            <Setter Property="TextColor" Value="#990000" />
+            <Setter Property="Text" Value="CATEGORIA AVENTURA" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="28" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HeightRequest" Value="50" />
+        </Style>
+
+        <!-- Style da Label Escolher Categoria -->
+        <Style x:Key="EscolherCategoriaLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="#990000" />
+            <Setter Property="Text" Value="SELECIONE UMA CATEGORIA" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="HeightRequest" Value="150" />
+            <Setter Property="FontSize" Value="28" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+
+        <!-- Style do Body das Páginas -->
+        <Style x:Key="Body" TargetType="Grid">
+            <Setter Property="BackgroundColor" Value="#111" />
+        </Style>
+
+        <!-- Style dos Button de Posters -->
+        <Style x:Key="ButtonsPosters" TargetType="ImageButton">
+            <Setter Property="Aspect" Value="Fill" />
+        </Style>
+    </Application.Resources>
+</Application>

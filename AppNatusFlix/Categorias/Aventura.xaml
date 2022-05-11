@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNatusFlix.Categorias.Aventura">
+
+    <!-- ScrollView ele aceita apenas um elemente dentro dele. -->
+    <ScrollView>
+        <Grid Style="{ StaticResource Body }" RowDefinitions="*, *, *, *, *, *, *, *" ColumnDefinitions="*, *" >
+            <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Image x:Name="logoNatusFlix" Style="{ StaticResource ImageLogo }" />
+            </StackLayout>
+            
+            <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                <Label Style="{ StaticResource LabelTextoAventuraVermelho }" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="6">
+                <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *" >
+                    <ImageButton Clicked="clickedUncharted" x:Name="btnUncharted" Grid.Row="0" Grid.Column="0" Style="{ StaticResource ButtonsPosters }"/>
+                    <ImageButton Clicked="clickedMoonFall" x:Name="btnMoonFall" Grid.Row="0" Grid.Column="1" Style="{ StaticResource ButtonsPosters }"/>
+                    <ImageButton Clicked="clickedViuvaNegra" x:Name="btnViuvaNegra" Grid.Row="1" Grid.Column="0" Style="{ StaticResource ButtonsPosters }"/>
+                    <ImageButton Clicked="clickedEternal" x:Name="btnEternal" Grid.Row="1" Grid.Column="1" Style="{ StaticResource ButtonsPosters }"/>
+                    <ImageButton Clicked="clickedBatman" x:Name="btnTheBatman" Grid.Row="2" Grid.Column="0" Style="{ StaticResource ButtonsPosters }"/>
+                    <ImageButton Clicked="clickedSpiderman" x:Name="btnSpiderman" Grid.Row="2" Grid.Column="1" Style="{ StaticResource ButtonsPosters }"/>
+                    <ImageButton Clicked="clickedVingadores" x:Name="btnVingadores" Grid.Row="3" Grid.Column="0" Style="{ StaticResource ButtonsPosters }"/>
+                    <ImageButton Clicked="clickedVenom" x:Name="btnVenom" Grid.Row="3" Grid.Column="1" Style="{ StaticResource ButtonsPosters }"/>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
